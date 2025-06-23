@@ -297,6 +297,7 @@ const endGame = async (game, pin) => {
     username: player.username,
     score: player.score || 0,
     correctAnswers: player.correctAnswers || 0,
+    incorrectAnswers: totalQuestions - (player.correctAnswers || 0),
     totalQuestions,
   }));
 
